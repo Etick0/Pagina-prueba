@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Moda & Estilo | Catálogo</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         NAVEGACIÓN
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <a href="#inicio" class="logo">
+            <strong>CATÁLOGO</strong>
+            <span>Moda & Estilo</span>
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="#inicio">Inicio</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+
+        </nav>
+
+        <button class="btn-carrito" onclick="abrirCarrito()">
+
+            <span class="icono-carrito">🛍</span>
+
+            Carrito
+
+            <span id="contadorCarrito">0</span>
+
+        </button>
+
+    </header>
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section class="hero" id="inicio">
+
+        <div class="hero-contenido">
+
+            <p class="hero-etiqueta">
+                NUEVA COLECCIÓN
+            </p>
+
+            <h1>
+                Descubre tu<br>
+                propio estilo.
+            </h1>
+
+            <p>
+                Explora nuestra selección de prendas y fragancias
+                pensadas para acompañarte en cada momento.
+            </p>
+
+            <a href="#catalogo" class="btn-hero">
+                Ver catálogo
+                <span>→</span>
+            </a>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+            <div class="hero-circulo">
+
+                <div class="hero-circulo-texto">
+                    <span>MODA</span>
+                    <strong>&</strong>
+                    <span>ESTILO</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CATEGORÍAS
+    ====================================================== -->
+
+    <section class="categorias">
+
+        <div class="categorias-titulo">
+
+            <span>EXPLORA</span>
+
+            <h2>
+                Encuentra lo que buscas
+            </h2>
+
+        </div>
+
+
+        <div class="categorias-contenedor">
+
+            <button
+                class="categoria-btn activa"
+                onclick="filtrarCategoria('Todos')">
+
+                <span class="categoria-icono">✦</span>
+
+                <span>Todos</span>
+
+            </button>
+
+
+            <button
+                class="categoria-btn"
+                onclick="filtrarCategoria('Camisas')">
+
+                <span class="categoria-icono">◈</span>
+
+                <span>Camisas</span>
+
+            </button>
+
+
+            <button
+                class="categoria-btn"
+                onclick="filtrarCategoria('Pantalones')">
+
+                <span class="categoria-icono">◇</span>
+
+                <span>Pantalones</span>
+
+            </button>
+
+
+            <button
+                class="categoria-btn"
+                onclick="filtrarCategoria('Vestidos')">
+
+                <span class="categoria-icono">♢</span>
+
+                <span>Vestidos</span>
+
+            </button>
+
+
+            <button
+                class="categoria-btn"
+                onclick="filtrarCategoria('Ropa infantil')">
+
+                <span class="categoria-icono">♡</span>
+
+                <span>Ropa infantil</span>
+
+            </button>
+
+
+            <button
+                class="categoria-btn"
+                onclick="filtrarCategoria('Fragancias')">
+
+                <span class="categoria-icono">✧</span>
+
+                <span>Fragancias</span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CATÁLOGO
+    ====================================================== -->
+
+    <main class="catalogo" id="catalogo">
+
+        <div class="catalogo-encabezado">
+
+            <div class="catalogo-titulo">
+
+                <span>COLECCIÓN</span>
+
+                <h2>Nuestros productos</h2>
+
+                <p>
+                    Selecciona las prendas que deseas consultar.
+                </p>
+
+            </div>
+
+
+            <div class="buscador-contenedor">
+
+                <span class="buscador-icono">⌕</span>
+
+                <input
+                    type="text"
+                    id="buscador"
+                    placeholder="Buscar producto..."
+                    autocomplete="off"
+                >
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="productos"
+            id="productos">
+        </div>
+
+
+        <div
+            id="sinResultados"
+            class="sin-resultados">
+
+            <div class="sin-resultados-icono">
+                ◌
+            </div>
+
+            <h3>
+                No encontramos productos
+            </h3>
+
+            <p>
+                Intenta con otra búsqueda o categoría.
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <!-- =====================================================
+         NOSOTROS
+    ====================================================== -->
+
+    <section class="nosotros" id="nosotros">
+
+        <div class="nosotros-contenido">
+
+            <span class="seccion-etiqueta">
+                SOBRE NOSOTROS
+            </span>
+
+            <h2>
+                Moda para cada momento.
+            </h2>
+
+            <p>
+                Somos un catálogo familiar dedicado a ofrecer una
+                selección de ropa y fragancias para diferentes
+                estilos, edades y ocasiones.
+            </p>
+
+            <p>
+                Nuestro objetivo es facilitarte la búsqueda de tus
+                productos favoritos y brindarte información de manera
+                sencilla antes de realizar tu compra.
+            </p>
+
+        </div>
+
+
+        <div class="nosotros-visual">
+
+            <div class="nosotros-marco">
+
+                <span>ESTILO</span>
+
+                <strong>&</strong>
+
+                <span>PERSONALIDAD</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONTACTO
+    ====================================================== -->
+
+    <section class="contacto" id="contacto">
+
+        <div class="contacto-contenido">
+
+            <span>
+                ¿TE INTERESA ALGÚN PRODUCTO?
+            </span>
+
+            <h2>
+                Hablemos por WhatsApp.
+            </h2>
+
+            <p>
+                Selecciona tus productos y envíanos tu consulta.
+                Te ayudaremos con disponibilidad, tallas y detalles.
+            </p>
+
+            <button
+                class="btn-whatsapp"
+                onclick="abrirWhatsApp()">
+
+                <span>WhatsApp</span>
+
+                <strong>→</strong>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+            CATÁLOGO
+        </div>
+
+        <p>
+            Moda & Estilo
+        </p>
+
+        <small>
+            © 2026 Todos los derechos reservados.
+        </small>
+
+    </footer>
+
+
+    <!-- =====================================================
+         FONDO DEL CARRITO
+    ====================================================== -->
+
+    <div
+        class="fondo-carrito"
+        id="fondoCarrito"
+        onclick="cerrarCarrito()">
+    </div>
+
+
+    <!-- =====================================================
+         CARRITO
+    ====================================================== -->
+
+    <aside
+        class="carrito"
+        id="carrito">
+
+        <div class="carrito-header">
+
+            <div>
+
+                <span>
+                    TU SELECCIÓN
+                </span>
+
+                <h2>
+                    Carrito
+                </h2>
+
+            </div>
+
+            <button
+                class="btn-cerrar-carrito"
+                onclick="cerrarCarrito()">
+
+                ×
+
+            </button>
+
+        </div>
+
+
+        <div
+            class="lista-carrito"
+            id="listaCarrito">
+
+        </div>
+
+
+        <div
+            class="carrito-vacio"
+            id="carritoVacio">
+
+            <div class="carrito-vacio-icono">
+                🛍
+            </div>
+
+            <h3>
+                Tu carrito está vacío
+            </h3>
+
+            <p>
+                Agrega productos del catálogo
+                para comenzar.
+            </p>
+
+            <button
+                onclick="cerrarCarrito()">
+
+                Ver productos
+
+            </button>
+
+        </div>
+
+
+        <div
+            class="carrito-pie"
+            id="carritoPie">
+
+            <div class="carrito-total">
+
+                <div>
+                    <span>PRODUCTOS</span>
+                    <strong id="totalProductos">0</strong>
+                </div>
+
+            </div>
+
+
+            <button
+                class="btn-whatsapp-carrito"
+                onclick="abrirWhatsApp()">
+
+                <span>
+                    Consultar por WhatsApp
+                </span>
+
+                <strong>
+                    →
+                </strong>
+
+            </button>
+
+
+            <button
+                class="btn-vaciar"
+                onclick="vaciarCarrito()">
+
+                Vaciar selección
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

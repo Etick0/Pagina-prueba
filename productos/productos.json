@@ -1,0 +1,162 @@
+[
+    {
+        "id": 1,
+        "nombre": "Camisa Oversize Beige",
+        "categoria": "Camisas",
+        "precio": 350,
+        "imagen": "",
+        "etiqueta": "NUEVO"
+    },
+    {
+        "id": 2,
+        "nombre": "Camisa Casual Negra",
+        "categoria": "Camisas",
+        "precio": 400,
+        "imagen": "",
+        "etiqueta": ""
+    },
+    {
+        "id": 3,
+        "nombre": "Camisa Básica Blanca",
+        "categoria": "Camisas",
+        "precio": 320,
+        "imagen": "",
+        "etiqueta": "POPULAR"
+    },
+    {
+        "id": 4,
+        "nombre": "Pantalón Cargo",
+        "categoria": "Pantalones",
+        "precio": 650,
+        "imagen": "",
+        "etiqueta": "POPULAR"
+    },
+    {
+        "id": 5,
+        "nombre": "Jeans Clásico",
+        "categoria": "Pantalones",
+        "precio": 700,
+        "imagen": "",
+        "etiqueta": ""
+    },
+    {
+        "id": 6,
+        "nombre": "Pantalón Recto",
+        "categoria": "Pantalones",
+        "precio": 600,
+        "imagen": "",
+        "etiqueta": "NUEVO"
+    },
+    {
+        "id": 7,
+        "nombre": "Vestido Elegante",
+        "categoria": "Vestidos",
+        "precio": 850,
+        "imagen": "",
+        "etiqueta": "NUEVO"
+    },
+    {
+        "id": 8,
+        "nombre": "Vestido Casual",
+        "categoria": "Vestidos",
+        "precio": 650,
+        "imagen": "",
+        "etiqueta": ""
+    },
+    {
+        "id": 9,
+        "nombre": "Vestido Floral",
+        "categoria": "Vestidos",
+        "precio": 750,
+        "imagen": "",
+        "etiqueta": "POPULAR"
+    },
+    {
+        "id": 10,
+        "nombre": "Conjunto Infantil",
+        "categoria": "Ropa infantil",
+        "precio": 450,
+        "imagen": "",
+        "etiqueta": "NUEVO"
+    },
+    {
+        "id": 11,
+        "nombre": "Camisa Infantil",
+        "categoria": "Ropa infantil",
+        "precio": 300,
+        "imagen": "",
+        "etiqueta": ""
+    },
+    {
+        "id": 12,
+        "nombre": "Pantalón Infantil",
+        "categoria": "Ropa infantil",
+        "precio": 400,
+        "imagen": "",
+        "etiqueta": ""
+    },
+    {
+        "id": 13,
+        "nombre": "Vestido Infantil",
+        "categoria": "Ropa infantil",
+        "precio": 500,
+        "imagen": "",
+        "etiqueta": "POPULAR"
+    },
+    {
+        "id": 14,
+        "nombre": "Splash Floral",
+        "categoria": "Fragancias",
+        "precio": 350,
+        "imagen": "",
+        "etiqueta": "NUEVO"
+    },
+    {
+        "id": 15,
+        "nombre": "Loción Elegance",
+        "categoria": "Fragancias",
+        "precio": 500,
+        "imagen": "",
+        "etiqueta": "POPULAR"
+    },
+    {
+        "id": 16,
+        "nombre": "Splash Fresh",
+        "categoria": "Fragancias",
+        "precio": 300,
+        "imagen": "",
+        "etiqueta": ""
+    },
+    {
+        "id": 17,
+        "nombre": "Loción Classic",
+        "categoria": "Fragancias",
+        "precio": 550,
+        "imagen": "",
+        "etiqueta": "NUEVO"
+    },
+    {
+        "id": 18,
+        "nombre": "Loción Valentino",
+        "categoria": "Fragancias",
+        "precio": 950,
+        "imagen": "",
+        "etiqueta": "NUEVO"
+    },
+    {
+        "id": 19,
+        "nombre": "Camisa oso",
+        "categoria": "Camisas",
+        "precio": 50,
+        "imagen": "",
+        "etiqueta": "NUEVO"
+    },
+    {
+        "id": 19,
+        "nombre": "Vestido",
+        "categoria": "Vestidos",
+        "precio": 290,
+        "imagen": "img/Vestido.jpeg",
+        "etiqueta": "NUEVO"
+    }
+]
